@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         id="org.adempiere.process.Export2Queue"
+         name="Export to ActiveMQ"
+         point="org.adempiere.base.Process">
+      <process
+            class="org.adempiere.process.Export2Queue">
+      </process>
+   </extension>
+   <extension
+         id="org.adempiere.process.ImportQueue2Order"
+         name="Import Orders From Queue"
+         point="org.adempiere.base.Process">
+	<process
+		class="org.adempiere.process.ImportQueue2Order">
+	</process>
+</extension>
+</plugin>
